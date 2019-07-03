@@ -1,16 +1,17 @@
 package com.example.toaster;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 
-public class ButtonUniform extends AppCompatActivity {
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-        setContentView(R.layout.button_layout);
+public class ButtonUniform extends View {
+    public ButtonUniform(Context context) {
+        super(context);
+        LayoutInflater.from(context).inflate(R.layout.button_layout,null);
     }
 
     public void setText(String text){
