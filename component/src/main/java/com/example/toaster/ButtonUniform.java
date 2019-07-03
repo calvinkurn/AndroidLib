@@ -7,15 +7,11 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
-public class ButtonUniform extends View {
-    public ButtonUniform(Context context) {
+public class ButtonUniform extends RelativeLayout {
+    public ButtonUniform(Context context){
         super(context);
-        View.inflate(context,R.layout.button_layout,null);
-    }
-
-    public void setText(String text){
-        Button uniformButton = (Button)findViewById(R.id.button);
-        uniformButton.setText(text);
+        inflate(context,R.layout.button_layout,this);
     }
 }
