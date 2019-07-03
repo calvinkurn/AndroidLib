@@ -1,4 +1,4 @@
-package com.example.button;
+package com.example.toaster;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-public class ButtonUnify extends AppCompatActivity {
+public class ButtonUniform extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
@@ -14,7 +14,7 @@ public class ButtonUnify extends AppCompatActivity {
     }
 
     public void setText(String text){
-        Button defaultButton = (Button) findViewById(R.id.button);
-        defaultButton.setText(text);
+        Button uniformButton = (Button)findViewById(R.id.button);
+        uniformButton.setText(text);
     }
 }

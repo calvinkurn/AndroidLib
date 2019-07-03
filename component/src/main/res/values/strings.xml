@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Toaster</string>
+    <string name="default_value">Default Value</string>
 </resources>
