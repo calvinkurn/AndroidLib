@@ -11,7 +11,7 @@ import android.widget.Button;
 public class ButtonUniform extends View {
     public ButtonUniform(Context context) {
         super(context);
-        LayoutInflater.from(context).inflate(R.layout.button_layout,null);
+        View.inflate(context,R.layout.button_layout,null);
     }
 
     public void setText(String text){
